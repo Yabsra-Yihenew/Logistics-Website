@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShip, faPlane, faTruck, faWarehouse, faFileContract, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faShip, faPlane, faTruck, faWarehouse, faFileContract, faGlobe, faSolarPanel, faLaptop, faBuildingColumns, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,11 +17,11 @@ function App() {
     <div className="app">
       <nav className="navbar">
         <div className="container">
-          <div className="logo">GIZE LOGISTICS</div>
+          <div className="logo">GIZE PLC</div>
           <div className="nav-links">
             <a href="#home">Home</a>
-            <a href="#services">Services</a>
             <a href="#about">About</a>
+            <a href="#services">Services</a>
             <a href="#contact">Contact</a>
           </div>
         </div>
@@ -29,76 +29,76 @@ function App() {
 
       <header className="hero" id="home">
         <div className="hero-content">
-          <h1 data-aos="fade-up">Your Best Solution For Logistics</h1>
-          <p data-aos="fade-up" data-aos-delay="200">Global Reach. Local Excellence.</p>
-          <button className="cta-button" data-aos="fade-up" data-aos-delay="400">Get Started</button>
+          <h1 data-aos="fade-up">Excellence in Global Logistics Since 2001</h1>
+          <p data-aos="fade-up" data-aos-delay="200">Your Trusted Partner in Transportation, Logistics, and Beyond</p>
+          <button className="cta-button" data-aos="fade-up" data-aos-delay="400">Explore Our Services</button>
         </div>
       </header>
-
-      <section className="services" id="services">
-        <div className="container">
-          <h2 data-aos="fade-up">What We Provide</h2>
-          <div className="service-grid">
-            <div className="service-card" data-aos="fade-up">
-              <FontAwesomeIcon icon={faShip} className="service-icon" />
-              <h3>Sea Freight</h3>
-              <p>Global sea freight solutions for your cargo</p>
-            </div>
-            <div className="service-card" data-aos="fade-up" data-aos-delay="100">
-              <FontAwesomeIcon icon={faPlane} className="service-icon" />
-              <h3>Air Freight</h3>
-              <p>Fast and reliable air freight services</p>
-            </div>
-            <div className="service-card" data-aos="fade-up" data-aos-delay="200">
-              <FontAwesomeIcon icon={faTruck} className="service-icon" />
-              <h3>Land Transport</h3>
-              <p>Comprehensive ground transportation</p>
-            </div>
-            <div className="service-card" data-aos="fade-up" data-aos-delay="300">
-              <FontAwesomeIcon icon={faWarehouse} className="service-icon" />
-              <h3>Warehouse</h3>
-              <p>Modern warehousing solutions</p>
-            </div>
-            <div className="service-card" data-aos="fade-up" data-aos-delay="400">
-              <FontAwesomeIcon icon={faFileContract} className="service-icon" />
-              <h3>Customs Clearance</h3>
-              <p>Efficient customs documentation</p>
-            </div>
-            <div className="service-card" data-aos="fade-up" data-aos-delay="500">
-              <FontAwesomeIcon icon={faGlobe} className="service-icon" />
-              <h3>Global Network</h3>
-              <p>Worldwide logistics coverage</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section className="about" id="about">
         <div className="container">
           <div className="about-content">
             <div className="about-text" data-aos="fade-right">
               <h2>About Us</h2>
-              <p>GIZE Logistics is your trusted partner in global logistics solutions. With years of experience and a commitment to excellence, we provide comprehensive logistics services tailored to your needs.</p>
+              <p>Established in 2001 by entrepreneur Gizeshwork Tessema, Gize PLC has grown into a globally recognized leader in transportation and logistics. Headquartered in Addis Ababa, Ethiopia, we've spent over two decades building a reputation for excellence and innovation.</p>
               <ul>
-                <li>24/7 Customer Support</li>
+                <li>20+ Years of Excellence</li>
+                <li>Dedicated Professional Team</li>
+                <li>Customized Solutions</li>
                 <li>Global Network Coverage</li>
-                <li>Custom Solutions</li>
-                <li>Professional Team</li>
               </ul>
             </div>
             <div className="about-stats" data-aos="fade-left">
               <div className="stat">
-                <h3>15+</h3>
+                <h3>22+</h3>
                 <p>Years Experience</p>
-              </div>
-              <div className="stat">
-                <h3>50+</h3>
-                <p>Countries</p>
               </div>
               <div className="stat">
                 <h3>1000+</h3>
                 <p>Happy Clients</p>
               </div>
+              <div className="stat">
+                <h3>24/7</h3>
+                <p>Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="services" id="services">
+        <div className="container">
+          <h2 data-aos="fade-up">Our Services</h2>
+          <div className="service-grid">
+            <div className="service-card" data-aos="fade-up">
+              <FontAwesomeIcon icon={faShip} className="service-icon" />
+              <h3>International Freight</h3>
+              <p>Comprehensive freight forwarding and shipping solutions worldwide</p>
+            </div>
+            <div className="service-card" data-aos="fade-up" data-aos-delay="100">
+              <FontAwesomeIcon icon={faFileContract} className="service-icon" />
+              <h3>Customs Clearance</h3>
+              <p>Expert customs clearance and port handling services</p>
+            </div>
+            <div className="service-card" data-aos="fade-up" data-aos-delay="200">
+              <FontAwesomeIcon icon={faWarehouse} className="service-icon" />
+              <h3>Warehousing</h3>
+              <p>Secure warehousing and storage solutions</p>
+            </div>
+            <div className="service-card" data-aos="fade-up" data-aos-delay="300">
+              <FontAwesomeIcon icon={faSolarPanel} className="service-icon" />
+              <h3>Energy Consulting</h3>
+              <p>Renewable energy and infrastructure project development</p>
+            </div>
+            <div className="service-card" data-aos="fade-up" data-aos-delay="400">
+              <FontAwesomeIcon icon={faBuildingColumns} className="service-icon" />
+              <h3>Financial Services</h3>
+              <p>Digital banking, investment banking, and FinTech solutions</p>
+            </div>
+            <div className="service-card" data-aos="fade-up" data-aos-delay="500">
+              <FontAwesomeIcon icon={faLaptop} className="service-icon" />
+              <h3>Digital Health</h3>
+              <p>Innovative digital health solutions and services</p>
             </div>
           </div>
         </div>
@@ -110,9 +110,9 @@ function App() {
           <div className="contact-content">
             <div className="contact-info" data-aos="fade-right">
               <h3>Get in Touch</h3>
-              <p>Email: info@gizelogistics.com</p>
-              <p>Phone: +251 123 456 789</p>
-              <p>Address: Addis Ababa, Ethiopia</p>
+              <p>Email: gize@gizeplc.com</p>
+              <p>Phone: +251 115 528080</p>
+              <p>Address: Bole Rwanda Embassy Road, Addis Ababa, Ethiopia</p>
             </div>
             <form className="contact-form" data-aos="fade-left">
               <input type="text" placeholder="Your Name" />
@@ -128,26 +128,26 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <div className="footer-section">
-              <h3>About Us</h3>
-              <p>GIZE Logistics provides comprehensive logistics solutions worldwide.</p>
+              <h3>About Gize PLC</h3>
+              <p>A globally recognized leader in transportation, logistics, and innovative business solutions since 2001.</p>
             </div>
             <div className="footer-section">
               <h3>Quick Links</h3>
               <a href="#home">Home</a>
-              <a href="#services">Services</a>
               <a href="#about">About</a>
+              <a href="#services">Services</a>
               <a href="#contact">Contact</a>
             </div>
             <div className="footer-section">
-              <h3>Services</h3>
-              <a href="#services">Sea Freight</a>
-              <a href="#services">Air Freight</a>
-              <a href="#services">Land Transport</a>
-              <a href="#services">Warehousing</a>
+              <h3>Core Services</h3>
+              <a href="#services">Freight Forwarding</a>
+              <a href="#services">Customs Clearance</a>
+              <a href="#services">Energy Consulting</a>
+              <a href="#services">Financial Services</a>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 GIZE Logistics. All rights reserved.</p>
+            <p>&copy; 2025 Gize PLC. All rights reserved.</p>
           </div>
         </div>
       </footer>
