@@ -1,0 +1,151 @@
+/* General Page Layout */
+.company-container {
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Company Profile Section */
+.company-profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ee3e36;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Company Content Layout */
+.company-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Core Values */
+.core-values {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+}
+
+.value-card {
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    color: #ee3e36;
+    margin-bottom: 0.5rem;
+}
+
+.value-card p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .company-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-text,
+    .core-values {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .core-values {
+        align-items: center;
+    }
+
+    .value-card {
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .company-text {
+        font-size: 1.1rem;
+    }
+}
