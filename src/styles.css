@@ -1,0 +1,107 @@
+/* ======= NAVBAR ======= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EE3E36;
+    padding: 15px 40px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li:hover {
+    color: #FFD700;
+}
+
+/* Dropdown Menu */
+.navbar ul .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    background: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+}
+
+.navbar ul .dropdown li {
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.navbar ul .dropdown li:hover {
+    background: #EE3E36;
+    color: white;
+}
+
+/* ======= FLOATING ICONS ======= */
+.floating-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.floating-icons a {
+    display: block;
+    margin: 10px 0;
+    background: #EE3E36;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    line-height: 26px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-icons a:hover {
+    transform: scale(1.1);
+    background: #D32F2F;
+}
+
+/* ======= PAGE CONTAINER ======= */
+.page-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ======= FOOTER ======= */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+}
