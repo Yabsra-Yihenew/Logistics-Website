@@ -109,7 +109,7 @@ const Footer = () => {
       
       <div className="footer-bottom">
         <div className="footer-container">
-          <p className="copyright">MelaTech Solution</p>
+          <a href="https://melaTechsolution.com" target="_blank" rel="noopener noreferrer" className="copyright">MelaTech Solution</a>
         </div>
       </div>
     </footer>

@@ -17,21 +17,6 @@ const Privileges = () => {
       icon: "fas fa-clock",
       title: "Fast & Timely Delivery",
       description: "We pride ourselves on providing fast and timely door-to-door services that meet your schedule constraints."
-    },
-    {
-      icon: "fas fa-shield-alt",
-      title: "Cargo Safety",
-      description: "Proper handling of all cargo types including normal, DG, chemical, liquid, high pressure, and specialized materials with appropriate packaging."
-    },
-    {
-      icon: "fas fa-file-alt",
-      title: "Documentation Support",
-      description: "We handle all documentation requirements including review of Letters of Credit, issuing Bills of Lading, and legalization of invoices."
-    },
-    {
-      icon: "fas fa-search",
-      title: "Real-Time Tracking",
-      description: "Monitor your shipment from your office or home through our online tracking system, keeping you informed at every step."
     }
   ];
 

@@ -79,29 +79,17 @@ const Testimonials = () => {
                       <p>{testimonial.position}</p>
                     </div>
                   </div>
+                  <div className="testimonial-navigation">
+                    <button className="testimonial-arrow prev-arrow" onClick={goToPrevTestimonial}>
+                      <i className="fas fa-chevron-left"></i>
+                    </button>
+                    <button className="testimonial-arrow next-arrow" onClick={goToNextTestimonial}>
+                      <i className="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
-          </div>
-          
-          <div className="testimonial-navigation">
-            <button className="testimonial-arrow prev-arrow" onClick={goToPrevTestimonial}>
-              <i className="fas fa-chevron-left"></i>
-            </button>
-            
-            <div className="testimonial-dots">
-              {testimonials.map((_, index) => (
-                <span 
-                  key={index} 
-                  className={`dot ${index === currentTestimonial ? 'active' : ''}`}
-                  onClick={() => goToTestimonial(index)}
-                ></span>
-              ))}
-            </div>
-            
-            <button className="testimonial-arrow next-arrow" onClick={goToNextTestimonial}>
-              <i className="fas fa-chevron-right"></i>
-            </button>
           </div>
         </div>
       </div>

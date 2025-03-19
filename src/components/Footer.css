@@ -211,12 +211,22 @@
   padding: 20px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   background-color: #121f35; /* Slightly darker blue for the bottom bar */
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .copyright {
-  text-align: center;
-  color: #8a97ad; /* Medium blue-gray for better readability */
+  color: #8a97ad;
   margin: 0;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.copyright:hover {
+  text-decoration: none;
+  color: #a9b3c7;
 }
 
 @media (max-width: 768px) {

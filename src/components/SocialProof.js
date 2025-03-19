@@ -28,29 +28,32 @@ const SocialProof = () => {
   const partners = [
     {
       name: "HAE Group",
-      logo: "https://via.placeholder.com/150x80?text=HAE+Group"
+      logo: require('../images/partners/hae-group.png')
     },
     {
       name: "The World Bank",
-      logo: "https://via.placeholder.com/150x80?text=World+Bank"
+      logo: require('../images/partners/world-bank.png')
     },
     {
       name: "IATA",
-      logo: "https://via.placeholder.com/150x80?text=IATA"
+      logo: require('../images/partners/iata.png')
     },
     {
-      name: "Wilhelmship Navigation",
-      logo: "https://via.placeholder.com/150x80?text=Wilhelmship"
+      name: "DHL",
+      logo: require('../images/partners/dhl.png')
     },
     {
-      name: "CARGOLINK",
-      logo: "https://via.placeholder.com/150x80?text=CARGOLINK"
+      name: "FedEx",
+      logo: require('../images/partners/fedex.png')
     },
     {
-      name: "United Nations",
-      logo: "https://via.placeholder.com/150x80?text=United+Nations"
+      name: "UPS",
+      logo: require('../images/partners/ups.png')
     }
   ];
+
+  // Duplicate partners array for continuous loop
+  const partnersLoop = [...partners, ...partners];
 
   return (
     <section className="social-proof-section">
@@ -66,7 +69,7 @@ const SocialProof = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="partners-container">
           <div className="section-header">
             <h2>OUR PARTNERS</h2>
@@ -74,11 +77,12 @@ const SocialProof = () => {
               <span></span>
             </div>
           </div>
-          
-          <div className="partners-logos">
-            {partners.map((partner, index) => (
-              <div className="partner-logo" key={index}>
-                <img src={partner.logo} alt={partner.name} />
+          <div className="partners-content">
+            {partnersLoop.map((partner, index) => (
+              <div key={index} className="partner-item">
+                <div className="partner-logo">
+                  <img src={partner.logo} alt={partner.name} />
+                </div>
               </div>
             ))}
           </div>

@@ -24,8 +24,8 @@ const Hero = () => {
       title: "Global Logistics Network",
       description: "Providing door to door services fast & timely with our extensive network of partners worldwide.",
       background: "https://images.unsplash.com/photo-1578575436955-ef29da568c6c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-      buttonText: "Contact Us",
-      buttonLink: "/contact"
+      buttonText: "Discover Now",
+      buttonLink: "/services"
     }
   ];
 
